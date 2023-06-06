@@ -18,3 +18,8 @@ export function generateJavaScript(model: Model, filePath: string, destination: 
     fs.writeFileSync(generatedFilePath, toString(fileNode));
     return generatedFilePath;
 }
+
+export async function generateCmakeFile (fileName: string | undefined): Promise<void> 
+{
+    console.log("Generating cmake file")
+}
